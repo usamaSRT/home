@@ -1,56 +1,56 @@
 header{
-    background-color: #00FFFF40;                          /*要素の背景色を青色(00FFFF40)に設定*/
-    border-bottom: 1px solid #000000;                     /*要素の下側に1pxの黒色(#000000)の実線を設定*/
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    height: 5rem;                                           /*要素の高さをルート要素のフォントサイズの5倍に設定*/
+    background-color: #00FFFF40;
+    border-bottom: 1px solid #000000;
+    display: flex;
+    height: 5rem;
 }
 .header_icon{
-    align-items: center;                                    /*フレックスボックス内のアイテムを交差軸方向の中央に配置*/
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    margin-left: 3rem;                                      /*要素の左外側の余白をルート要素のフォントサイズの3倍に設定*/
-    width: 4rem;                                            /*要素の幅をルート要素のフォントサイズの4倍に設定*/
+    align-items: center;
+    display: flex;
+    margin-left: 3rem;
+    width: 4rem;
 }
 .header_icon a{
-    aspect-ratio: 1/1;                                      /*要素の縦横比を1対1に設定*/
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    height: 4rem;                                           /*要素の高さをルート要素のフォントサイズの4倍に設定*/
+    aspect-ratio: 1/1;
+    display: flex;
+    height: 4rem;
 }
 .header_title{
-    align-items: center;                                    /*フレックスボックス内のアイテムを交差軸方向の中央に配置*/
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    margin-left: 3rem;                                      /*要素の左外側の余白をルート要素のフォントサイズの3倍に設定*/
+    align-items: center;
+    display: flex;
+    margin-left: 3rem;
 }
 .header_title h1{
-    margin: 0;                                              /*要素の外側の余白を0pxに設定*/
+    margin: 0;
 }
 .header_button{
-    align-items: center;                                    /*フレックスボックス内のアイテムを交差軸方向の中央に配置*/
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    margin-left: auto;                                      /*要素の左外側の余白を自動的に調整するよう設定*/
-    margin-right: 3rem;                                     /*要素の右外側の余白をルート要素のフォントサイズの3倍に設定*/
-    width: 3rem;                                            /*要素の幅をルート要素のフォントサイズの3倍に設定*/
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: 3rem;
+    width: 3rem;
 }
 .header_button_space{
-    aspect-ratio: 1/1;                                      /*要素の縦横比を1対1に設定*/
-    cursor: pointer;                                        /*マウスカーソルをポインター（指の形）に設定*/
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    flex-direction: column;                                 /*フレックスボックス内のアイテムを垂直方向に配置*/
-    height: 3rem;                                           /*要素の高さをルート要素のフォントサイズの3倍に設定*/
-    position: relative;                                     /*要素の配置を相対位置に設定*/
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    position: relative;
 }
 .header_button_space span{
-    background-color: #000000;                            /*要素の背景色を黒色(000000)に設定*/
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    height: 0.2rem;                                         /*要素の高さをルート要素のフォントサイズの0.2倍に設定*/
-    position: absolute;                                     /*要素の配置を絶対位置に設定*/
-    width: 100%;                                            /*要素の幅を親要素の幅の100%に設定*/
+    background-color: #000000;
+    display: flex;
+    height: 0.2rem;
+    position: absolute;
+    width: 100%;
 }
 .header_button_space span:nth-child(1){
-    top: 0.4rem;                                            /*要素の上端を親要素の上端からルート要素のフォントサイズの0.4倍下に配置*/
+    top: 0.4rem;
 }
 .header_button_space span:nth-child(2){
-    top: 1.4rem;                                            /*要素の上端を親要素の上端からルート要素のフォントサイズの1.4倍下に配置*/
+    top: 1.4rem;
 }
 .header_button_space span:nth-child(3){
-    top: 2.4rem;                                            /*要素の上端を親要素の上端からルート要素のフォントサイズの2.4倍下に配置*/
+    top: 2.4rem;
 }
