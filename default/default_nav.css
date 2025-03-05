@@ -1,93 +1,93 @@
 nav{
-    background-color: #FFFFFF;                            /*要素の背景色を白色(FFFFFF)に設定*/
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    flex-direction: column;                                 /*フレックスボックス内のアイテムを垂直方向に配置*/
-    height: 100vh;                                           /*C*//*要素の高さを親要素の高さの100%に設定*/
-    opacity: 0;                                             /*要素を透明に設定*/
-    position: fixed;                                        /*要素をビューポートに対して固定*/
-    top: -100vh;                                             /*C*//*要素の上端を親要素の上端から親要素の高さの-100%下に配置*/
-    transition: all 0.5s;                                   /*要素に0.5秒のアニメーションを設定*/
-    width: 100vw;                                            /*C*//*要素の幅を親要素の幅の100%に設定*/
-    z-index: 50;                                            /*要素の重なり順を50に設定*/
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    opacity: 0;
+    position: fixed;
+    top: -100vh;
+    transition: all 0.5s;
+    width: 100vw;
+    z-index: 50;
 }
 .open nav{
-    opacity: 1;                                             /*要素を非透明に設定*/
-    top: 0;                                                 /*要素の上端を親要素の上端から0px下に配置*/
+    opacity: 1;
+    top: 0;
 }
 .nav_header{
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    height: 5rem;                                           /*要素の高さをルート要素のフォントサイズの5倍に設定*/
+    display: flex;
+    height: 5rem;
 }
 .nav_button{
-    align-items: center;                                    /*フレックスボックス内のアイテムを交差軸方向の中央に配置*/
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    margin-left: auto;                                      /*要素の左外側の余白を自動的に調整するよう設定*/
-    margin-right: 3rem;                                     /*要素の右外側の余白をルート要素のフォントサイズの3倍に設定*/
-    width: 3rem;                                            /*要素の幅をルート要素のフォントサイズの3倍に設定*/
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: 3rem;
+    width: 3rem;
 }
 .nav_button_space{
-    aspect-ratio: 1/1;                                      /*要素の縦横比を1対1に設定*/
-    cursor: pointer;                                        /*マウスカーソルをポインター（指の形）に設定*/
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    flex-direction: column;                                 /*フレックスボックス内のアイテムを垂直方向に配置*/
-    height: 3rem;                                           /*要素の高さをルート要素のフォントサイズの3倍に設定*/
-    justify-content: center;                                /*フレックスボックス内のアイテムを主軸方向の中央に配置*/
-    position: relative;                                     /*要素の配置を相対位置に設定*/
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    justify-content: center;
+    position: relative;
 }
 .nav_button_space span{
-    background-color: #000000;                            /*要素の背景色を黒色(000000)に設定*/
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    height: 0.2rem;                                         /*要素の高さをルート要素のフォントサイズの0.2倍に設定*/
-    position: absolute;                                     /*要素の配置を絶対位置に設定*/
-    width: 100%;                                            /*要素の幅を親要素の幅の100%に設定*/
+    background-color: #000000;
+    display: flex;
+    height: 0.2rem;
+    position: absolute;
+    width: 100%;
 }
 .nav_button_space span:nth-child(1){
-    transform: rotate(45deg);                               /*要素を時計回りに45度回転して配置*/
+    transform: rotate(45deg);
 }
 .nav_button_space span:nth-child(2){
-    transform: rotate(-45deg);                              /*要素を時計回りに-45度回転して配置*/
+    transform: rotate(-45deg);
 }
 /*-----*/
 .nav_main{
-    align-items: center;                                    /*フレックスボックス内のアイテムを交差軸方向の中央に配置*/
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    flex: 1;                                                /*要素を親要素内の利用可能なスペースを均等に分けるよう調整*/
-    justify-content: center;                                /*フレックスボックス内のアイテムを主軸方向の中央に配置*/
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
 }
 .nav_list{
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    justify-content: center;                                /*フレックスボックス内のアイテムを主軸方向の中央に配置*/
-    width: 80%;                                             /*要素の幅を親要素の幅の80%に設定*/
+    display: flex;
+    justify-content: center;
+    width: 80%;
 }
 .nav_list ul{
-    list-style: none;                                       /*リスト要素のマーカーを非表示に設定*/
-    margin: 0;                                              /*要素の外側の余白を0pxに設定*/
-    padding: 0;                                             /*要素の内側の余白を0pxに設定*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .nav_list ul li{
-    display: inline-block;                                  /*要素にインライン要素とブロック要素を設定*/
-    border: 1px solid #00000020;                          /*要素の境界線に1pxの黒色(00000020)の実線を設定*/
-    border-radius: 1rem;                                    /*要素の角の半径をルート要素のフォントサイズの1倍に設定*/
-    margin: 1rem 0;                                         /*要素の上下外側の余白をルート要素のフォントサイズの1倍かつ左右外側の余白を0に設定*/
-    width: 100%;                                            /*要素の幅を親要素の幅の80%に設定*/
+    display: inline-block;
+    border: 1px solid #00000020;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    width: 100%;
 }
 .nav_list ul li:hover{
-    background-color: #0000FF10;                          /*要素の背景色を青色(0000FF10)に設定*/
+    background-color: #0000FF10;
 }
 .nav_list ul li a{
-    color: #000000;                                       /*フォントの色を黒色(000000)に設定*/
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    font-size: 2rem;                                        /*フォントサイズをルート要素のフォントサイズの2倍に設定*/
-    font-weight: 700;                                       /*フォントの太さを700に設定*/
-    padding: 1rem 0;                                        /*要素の上下内側の余白をルート要素のフォントサイズの1倍かつ左右内側の余白を0pxに設定*/
-    padding-left: 1rem;                                     /*要素の左内側の余白をルート要素のフォントサイズの1倍に設定*/
-    text-decoration-line: none;                             /*テキストの装飾線を非表示に設定*/
-    width: 100%;                                            /*要素の幅を親要素の幅の80%に設定*/
+    color: #000000;
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    text-decoration-line: none;
+    width: 100%;
 }
 .nav_list ul li a:hover{
-    color: #0000FF;                                       /*フォントの色を青色(0000FF)に設定*/
+    color: #0000FF;
 }
 .nav_footer{
-    display: flex;                                          /*要素をフレックスコンテナに設定*/
-    height: 5rem;                                           /*要素の高さをルート要素のフォントサイズの5倍に設定*/
+    display: flex;
+    height: 5rem;
 }
